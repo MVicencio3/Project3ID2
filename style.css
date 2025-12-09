@@ -1,0 +1,117 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #222;
+  text-align: center;
+  font-family: Verdana, Geneva, sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  flex-direction: column;
+}
+
+#startScreen {
+  position: fixed;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2C2F34;
+}
+
+#startBtn {
+  display: flex;               
+  justify-content: center;     
+  align-items: center;         
+  width: 150px;             
+  height: 60px;                
+  font-size: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #2C2F34;
+  color: white;
+  border: 2px solid #C4E1FF;
+}
+
+#startBtn:hover {
+  box-shadow: 0 0 5px 1px #C4E1FF;
+  background-color: #C4E1FF;
+}
+
+
+button {
+  display: flex;             
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 50px;
+  background-color: #444;
+  color: white;
+  border: 2px solid #666;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin: 10px;
+}
+
+button:hover {
+  background-color: #2C2F34;
+  box-shadow: 0 0 5px 1px #C4E1FF;
+}
+
+input[type=range] {
+  width: 200px;
+  margin-top: 20px;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  background-color: #2C2F34;
+  border: 2px solid #C4E1FF;
+  border-radius: 10px;
+}
+
+#playBtn:hover,
+#pauseBtn:hover,
+#resetBtn:hover,
+#skip10Btn:hover,
+#prevBtn:hover,
+#nextBtn:hover {
+    filter: brightness(1.5) drop-shadow(0 0 5px #C4E1FF) drop-shadow(0 0 5px #C4E1FF);
+}
+
+
+#playlistContainer {
+    position: absolute;
+    left: 50px;          
+    top: 100px;          
+    display: none;       
+    flex-direction: column;
+    gap: 20px;
+    z-index: 20;
+}
+
+
+.playlistBtn {
+    width: 90px;
+    cursor: pointer;
+    filter: drop-shadow(0 0 3px #C4E1FF);
+    transition: 0.2s;
+}
+
+
+#playlistBtn0:hover,
+#playlistBtn1:hover,
+#playlistBtn2:hover {
+    filter: brightness(1.5) drop-shadow(0 0 5px #C4E1FF)
+            drop-shadow(0 0 20px #C4E1FF);
+    cursor: pointer;
+}
